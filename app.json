@@ -1,0 +1,42 @@
+{
+  "env": {
+    "SMTP_ADDRESS": {
+      "required": true
+    },
+    "SMTP_DOMAIN": {
+      "required": true
+    },
+    "SMTP_PASSWORD": {
+      "required": true
+    },
+    "SMTP_USERNAME": {
+      "required": true
+    }
+  },
+  "name": "token-example",
+  "scripts": {
+  },
+  "env": {
+    "APPLICATION_HOST": {
+      "required": true
+    },
+    "EMAIL_RECIPIENTS": {
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+    "HEROKU_PARENT_APP_NAME": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
